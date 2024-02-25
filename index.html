@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<style>
+body{
+ font-family: Georgia, serif;  
+ background:  linear-gradient( 135deg, pink 10%, blue 100%);
+}    
+.header1{
+position: fixed;
+height: 80px;
+width: 100%;
+background: #F5F5DC;
+left: 0%;
+top: 0%;
+z-index: 100;
+}
+.header2{
+ position: fixed;   
+ left: 5%;
+ top: 2%;
+ height: 40px;
+ line-height: 40px;
+ border: 1px solid #F0E68C;
+}
+.header2:hover{
+    background: #F0E68C;
+}
+.header3{
+    position: fixed;
+    left: 40%;
+    top: 2%;
+    height: 40px;
+ line-height: 40px;
+ border: 1px solid #F0E68C;
+ width: 100px;
+ text-align: center;
+
+}
+.header3:hover{
+    background: #F0E68C;
+}
+.header4{
+    position: fixed;
+    left: 60%;
+    top: 2%;
+    height: 40px;
+ line-height: 40px;
+ border: 1px solid #F0E68C;
+ width: 100px;
+ text-align: center;
+}
+.header4:hover{
+    background: #F0E68C;
+}
+.header5{
+    position: fixed;
+    left: 80%;
+    top: 2%;
+    height: 40px;
+ line-height: 40px;
+ border: 1px solid #F0E68C;
+ width: 100px;
+ text-align: center;
+}
+.header5:hover{
+    background: #F0E68C;
+}
+.header_hover{
+    text-decoration: none;
+}
+.header_hover:hover{
+    color: #9932CC;
+
+}
+.main_bgcolor{
+  background: linear-gradient(lightpink,lightpurple);
+}
+
+.main_style{
+    position: relative;
+    top: 120px;
+}
+/*沒用到
+.bg_color {
+  background: linear-gradient( 135deg, pink 10%, #FFE4E1 100%);
+}
+*/
+    #bg_color_size {
+      padding: 120px 100px;
+      width: 65%;
+
+    }
+.frame_move {
+      background-color: white;
+      width: 100%;
+      height: 88px;
+      border: 1px solid black;
+      margin-top: 10px;
+
+    }
+    .frame_move:hover {
+
+      transform: translateX(30px);
+    }
+
+    .frame_word {
+      color: #333e48;
+      font-family: Helveticaneue;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 28px;
+
+    }
+
+    .frame_seperate {
+      border-collapse: separate;
+      border-spacing: 0px 10px;
+
+    }
+
+    .frame_img_left {
+      width: 100px;
+    }
+    .frame_img_css{
+      display:block;
+       margin:auto;
+    }
+    .color_blue_text34 {
+      color: rgba(10, 10, 238, 0.89);
+      font-family: Helveticaneue;
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+    .color_grey_text42 {
+      font-family: Helveticaneue;
+      font-weight: 700;
+      line-height: 46px;
+      font-size: 42px;
+      color: #333e48;
+      width: 100%;
+      margin-top: 10px;
+      letter-spacing: 0;
+    }
+    .color_lightgrey_text20 {
+      color: #666e75;
+      font-family: Helveticaneue;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 30px;
+    }
+    .button1 {
+      font-family: Helveticaneue;
+      font-size: 16px;
+      width: 220px;
+      height: 40px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+    .grid4_bgcolor{
+     /*沒用到 background: linear-gradient( 135deg, pink 10%, #FFE4E1 100%); */
+      height: 400px;
+    }
+    #grid4_position {
+      position: relative;
+      top: 100px;
+    }
+
+    #grid4_content {
+      padding: 15px 15px;
+      width: 100%;
+      height: 60px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 60px;
+    }
+    .grid5_bgcolor{
+      /*沒用到 background: linear-gradient( 135deg, pink 10%, #FFE4E1 100%); */
+      height: 900px;
+    }
+
+    #grid5_position {
+      position: relative;
+      height: 450px;
+      top: 300px;
+      background-color: lightyellow;
+    }
+    #grid5_content_position {
+      position: relative;
+      width: 80%;
+      top: 50px;
+      left: 25px;
+    }
+    .grid5_6content_position {
+      margin-top: 16px;
+      margin-left: 0;
+      padding-right: 48px;
+      text-align: left;
+    }
+    .grid5_icon_color {
+      color: blue;
+      font-size: 20px;
+    }
+    .grid6_position{
+    /*沒用到  background: linear-gradient(lightpink,lightyellow); */
+      height: 800px;
+    }
+
+    #grid6_content {
+      position: relative; 
+      top: 100px; 
+      padding-top: 80px;
+      width: 1100px;
+      height: 400px;
+    }
+    #video1_position{
+      margin-top: 50px;
+    }
+    .grid7_position{
+    /*沒用到  background: linear-gradient(lightpink,lightyellow); */
+      position: relative; 
+      height: 600px;
+    }
+    #grid7_content {
+      padding-top: 150px;
+      width: 800px;
+      height: 620px;
+    }
+    #grid7_col_left{
+      color: darkblue; 
+      font-weight: bold; 
+      font-family: Helveticaneue;
+      font-weight: 700;
+      font-size: 38px; 
+      line-height: 46px;
+    }
+    .grid7_col_right1{
+      color: darkblue; 
+      font-family: Helveticaneue;
+      font-weight: 300;
+      font-size: 20px; 
+      line-height: 30px;
+    }
+    #grid7_col_right2{
+      width: 120px; 
+      height: 40px; 
+      white-space:nowrap;
+      font-size: 14px; 
+      font-family: Helveticaneue;
+      color: #0075c9;
+    }
+    #grid7_col_right3{
+      height: 40px; 
+      font-size: 14px; 
+      font-family: Helveticaneue;
+      color: #0075c9;
+    }
+    .grid8_position{
+      position: relative; 
+      height: 500px; 
+      width: 100%;
+    }
+    .grid8_margin{
+      top: 400px; 
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      padding: 0px;
+    }
+    .grid8_content_left{
+    /*沒用到  background-color: #eca7f5; */
+      height: 100%;
+    }
+    .grid8_content_right{
+    /*沒用到  background-color: #f5bfe5; */
+      height: 100%;
+    }
+    .grid8_table1{
+      margin: 0 auto; 
+      margin-top: 50px;
+    }
+    #grid8_content_left_color {
+      color: black;
+      margin: 0 auto;
+      width: 240px;
+      margin-top: 50px;
+    }
+
+    .grid8_content_right_color {
+      color: black;
+      text-decoration: none;
+      font-family: Helveticaneue;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 22px;
+      font-style: normal;
+      margin-left: 20px;
+    }
+
+    .grid8_content_right_color:hover {
+      color: white;
+      text-decoration: none;
+
+    }
+
+    #grid8_content_right_boldword{
+      color: black;
+      font-family: Helveticaneue;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 26px;
+      font-style: normal;
+      margin-left: 20px;
+    }
+
+    .showArrow {
+      width: 10px;
+      height: 10px;
+      transition: opacity 200ms ease 0s;
+      opacity: 0;
+    }
+
+    .showArrow:hover {
+      width: 30px;
+      height: 30px;
+    }
+    .grid8_content_right_color2_position
+    {
+      position: relative;
+      top: 30%;
+    }
+
+    .grid8_content_right_color2 {
+      color: rgba(128, 92, 92, 0.5);
+      font-family: Helveticaneue;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 20px;
+      font-style: normal;
+      text-decoration: none;
+      border-collapse: separate;
+      margin-left: 20px;
+    }
+    .grid8_icon_position{
+      position: relative;
+      top: 10%;
+    }
+
+    .grid8_icon_color {
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+      font-size: 24px;
+      color: red;
+    }
+
+</style>
+<script>
+ $('iframe').attr('src', $('iframe').attr('src'));
+</script>
+
+</head>
+
+
+<body>
+ 
+<div class="header1">
+<table>
+    <tr>
+        <td class="header2"><a href="index.html" class="header_hover">Yiching's resume</a></td>
+        <td class="header3"><a href="work.html" class="header_hover" target="main">Work</a></td>
+        <td class="header4"><a href="https://github.com/yiching730" class="header_hover" target="_blank" >github</a></td>
+        <td class="header5"><a href="story.html" class="header_hover" target="main">Story</a></td>
+    </tr>
+</table>
+
+</div>   
+
+<div class="main_bgcolor">
+<div class="main_style">
+<iframe width="100%" height="700px" src="main.html" frameborder="0" name="main"></iframe>
+</div>
+</div>
+
+<div class="bg_color">
+
+    <div class="container" id="bg_color_size">
+      <div class="row">
+
+<div class="col">
+    <div class="btn-group-vertical">
+      <table class="frame_seperate">
+        <tr class="frame_move">
+          <td class="frame_img_left"><img
+              src="https://www.sanlamindie.co.za/website-files-global/5c7e4b054602df40a674372a/5c98aab9de94e8c41c064f59_Funeral%402x.svg"
+              alt="" width="40px" class="frame_img_css"></td>
+          <td class="frame_word">應用程式及工具</td>
+      
+        </tr>
+
+        <tr class="frame_move">
+          <td class="frame_img_left"><img
+              src="https://www.sanlamindie.co.za/website-files-global/5c7e4b054602df40a674372a/5c98aafcde94e800d9064ffb_Finale%402x.svg"
+              alt="" width="40px" class="frame_img_css"></td>
+          <td class="frame_word">html</td>
+         
+        </tr>
+
+        <tr class="frame_move">
+          <td class="frame_img_left"><img
+              src="https://www.sanlamindie.co.za/website-files-global/5c7e4b054602df40a674372a/5c98ab067e3bc96fab7fb441_Overcome%402x.svg"
+              alt="" width="40px" class="frame_img_css"></td>
+          <td class="frame_word">css</td>
+         
+        </tr>
+
+        <tr class="frame_move">
+          <td class="frame_img_left"><img
+              src="https://www.sanlamindie.co.za/website-files-global/5c7e4b054602df40a674372a/5c98ab11d78421dafb95646e_Preserve%402x.svg"
+              alt="" width="40px" class="frame_img_css"></td>
+          <td class="frame_word">jQuery</td>
+          
+        </tr>
+
+        <tr class="frame_move">
+          <td class="frame_img_left"><img
+              src="https://www.sanlamindie.co.za/website-files-global/5c7e4b054602df40a674372a/5c98ab24d78421e2fc956487_Restart%402x.svg"
+              alt="" width="40px" class="frame_img_css"></td>
+          <td class="frame_word">bootstrap</td>
+         
+        </tr>
+
+        <tr class="frame_move">
+          <td class="frame_img_left"><img
+              src="https://www.sanlamindie.co.za/website-files-global/5c7e4b054602df40a674372a/5c98ab31544edd6b655ff68f_Assist%402x.svg"
+              alt="" width="40px" class="frame_img_css"></td>
+          <td class="frame_word">Xampp</td>
+         
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="col" style="padding-top: 140px;">
+    <p class="color_blue_text34">興趣</p>
+    <h2 class="color_grey_text42 ">後來發現自己真正喜歡的興趣是研究網頁設計，html運用bootstrap的grid功能切版，網頁程式設計原來很有趣，發現有趣的功能時，會覺得很好玩，如jquery的animate功能。</h2>
+    <p class="color_lightgrey_text20">網頁設計是一件有趣的事情。</p>
+    <a href="https://github.com/yiching730" class="btn btn-primary btn-lg active button1" role="button"
+      aria-pressed="true" target="_blank">View my works from github</a>
+  </div>
+
+</div>
+</div>
+
+</div>
+
+<div class="grid4_bgcolor">
+<div id="grid4_position">
+<div id="grid4_content" align="center">
+<p class="color_blue_text34">為什麼喜歡網頁設計呢？</p>
+<h2 class="color_grey_text42 ">以前工作的學校網頁使用黑快馬系統，類似網頁部落格編輯器...</h2>
+<p class="color_lightgrey_text20">後來發現html及css語法是非常有趣的，可以藉由修改語法，讓文字及功能產生不同變化，<br>後來又接觸到jquery、bootstrap、font awesome，發現網頁技術一直在創新，也有許多好玩的功能，讓我不斷地學習與探索。</p>
+</div>
+
+</div>
+</div>
+
+
+<div class="grid5_bgcolor">
+<div id="grid5_position" class="container" align="center">
+<div class="row" id="grid5_content_position">
+<div class="col grid5_6content_position">
+  <p class="grid5_icon_color"><i class="fas fa-mobile-alt"></i></p>
+  <h5 style="font-weight: bold;">font awesome</h5>
+  <p>透過語法，讓icon圖案簡單嵌入，讓版面優化，圖片簡單明瞭。</p>
+</div>
+
+<div class="col grid5_6content_position">
+  <p class="grid5_icon_color"><i class="fas fa-ban"></i></p>
+  <h5 style="font-weight: bold;">jquery</h5>
+  <p>讓網頁可以快速產生動畫功能，也可以透過語法，讓不同功能可以搭配使用。</p>
+</div>
+
+<div class="col grid5_6content_position">
+  <p class="grid5_icon_color"><i class="far fa-snowflake"></i></p>
+  <h5 style="font-weight: bold;">bootstrap</h5>
+  <p>透過bootstrap，讓版面配置更優化，也擴增一些功能，讓網頁功能更多，也使讀者使用上操作更快速，版面更簡潔。</p>
+</div>
+
+<div class="w-100"></div>
+<div class="col grid5_6content_position">
+  <p class="grid5_icon_color"><i class="fas fa-clock"></i></p>
+  <h5 style="font-weight: bold;">CSS</h5>
+  <p>透過CSS語法，讓網頁設計語法更簡潔。</p>
+</div>
+
+<div class="col grid5_6content_position">
+  <p class="grid5_icon_color"><i class="fas fa-registered"></i></p>
+  <h5 style="font-weight: bold;">HTML</h5>
+  <p>網頁設計的主語法，搭配不同語言使網頁設計上更有質感。</p>
+</div>
+
+<div class="col grid5_6content_position">
+  <p class="grid5_icon_color"><i class="fas fa-calendar-alt"></i></p>
+  <h5 style="font-weight: bold;">JAVASCRIPT</h5>
+  <p>透過運用JS，使網頁有一些動態功能。</p>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+
+<div class="grid6_position">
+<div class="container" id="grid6_content">
+<div class="row">
+  <div class="col">
+    <p class="color_blue_text34">自我工作期許</p>
+    <h2 class="color_grey_text42 ">網頁是一件有趣的工程，從零到網頁成形，探索網頁的多樣型態</h2>
+    <p class="color_lightgrey_text20">頁首、頁尾的版面配置，還有所需的功能，會發現網頁其實處處充滿探索的空間，內文的版面配置及內容也需要巧思，若一個美化又簡約的風格，能吸引到更多不同的讀者賞閱，網頁也好操作，覺得網頁設計很有趣。 希望有這個機會可以從事這個職務，除了能累積經驗外，也能培養不同的技巧，學習不同的事務，累積經驗。希望有機會能參與本職缺的面試，謝謝抽空看了履歷，真的很感謝！謝謝。</p>
+
+
+  </div>
+  <div class="col">
+    <video width="500" controls id="video1_position">
+      <source src="videos/Design1.mp4" type="video/mp4">
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="grid7_position">
+<div class="container" id="grid7_content">
+<div class="row">
+  <div class="col" id="grid7_col_left">
+    <p>網頁設計</p>
+    <p>結合Bootstrap及Jquery</p>
+    <p>讓網頁產生新的變化</p>
+  </div>
+
+  <div class="col">
+    <p class=" grid7_col_right1">創造新的版面及不同畫風的網頁</p>
+    <a href="https://github.com/yiching730" class="btn btn-light btn-lg active" role="button"
+      aria-pressed="true" id="grid7_col_right2" target="_blank"><i class="fas fa-arrow-alt-right"></i>看作品</a>或
+    <a href="mailto:abcssswow@gmail.com" class="btn btn-outline-info btn-lg" role="button" aria-pressed="true" id="grid7_col_right3">
+      <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;來信
+    </a>
+   
+  </div>
+
+</div>
+</div>
+</div>
+
+
+
+<div class="grid8_position">
+<div class="row grid8_margin">
+
+<div class="col-sm-4 grid8_content_left">
+  <div id="grid8_content_left_color" class="col-4">
+    <h4> 期待進入網頁設計的世界</h4>
+    <p> 網頁設計能創作想要的網頁畫面、打造創新、專屬於個人的網頁及版面。</p>
+
+    <p>網頁技術是門有趣的學問，在日益變新的程式技術裡，學習不同的語法與功能。</p>
+  </div>
+</div>
+
+
+<div class="col-sm-8 grid8_content_right">
+
+  <table class="table grid8_table1">
+    <tr>
+      <th scope="col">
+        <p id="grid8_content_right_boldword">網頁素材1</p>
+        <p class="grid8_content_right_color">照片</p>
+        <p class="grid8_content_right_color">影片</p>
+        <p class="grid8_content_right_color">音訊</p>
+        <p class="grid8_content_right_color">資料</p>
+       
+      </th>
+
+      <th scope="col">
+        <p id="grid8_content_right_boldword">網頁素材2</p>
+        <p class="grid8_content_right_color">文件</p>
+        <p class="grid8_content_right_color">說明</p>
+        <p class="grid8_content_right_color">可公開的資訊</p>
+      </th>
+
+
+      <th scope="col">
+        <p id="grid8_content_right_boldword">網頁素材3</p>
+        <p class="grid8_content_right_color">公司簡介</p>
+        <p class="grid8_content_right_color">歷史</p>
+        <p class="grid8_content_right_color">介紹</p>
+      </th>
+
+
+      <th scope="col">
+        <p id="grid8_content_right_boldword">網頁素材4</p>
+        <p class="grid8_content_right_color">活動紀錄</p>
+        <p class="grid8_content_right_color">得獎事蹟</p>
+        <p class="grid8_content_right_color">值得介紹事項</p>
+      </th>
+    </tr>
+
+  </table>
+  
+  <div class="grid8_icon_position">
+  <center>
+  <a class="grid8_icon_color" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+  <a class="grid8_icon_color" href="https://www.instagram.com/" target="_blank"><i
+      class="fab fa-instagram"></i></a>
+  <a class="grid8_icon_color" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a class="grid8_icon_color" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a class="grid8_icon_color" href="https://www.linkedin.com/" target="_blank"><i
+      class="fab fa-linkedin"></i></a>
+    </center>
+  </div>
+
+      <div style="position: fixed; bottom: 10%; right: 0%;">
+        <a href="#top" role="button" class="btn btn-outline-dark"><i class="fas fa-angle-up"></i></a>
+    </div>
+
+    <div class="grid8_content_right_color2_position">
+    <center> <p class="grid8_content_right_color2">Copyright © yiching Jiang 2021. All Rights Reserved. </p></center>
+  </div> 
+
+</div>
+</div>
+</div>
+
+</body>
+</html>
